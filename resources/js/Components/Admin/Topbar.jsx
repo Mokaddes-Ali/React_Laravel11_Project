@@ -4,8 +4,6 @@ import { MdDarkMode, MdLightMode,MdMenu } from 'react-icons/md';
 import { AiOutlineClose } from 'react-icons/ai';
 import { TfiAlignRight,TfiAlignLeft } from "react-icons/tfi";
 import { FaExpand, FaCompress } from 'react-icons/fa';
-import { useColor } from '../context/ColorContext';
-import ThemeControl from './ThemeControl';
 import { CiMenuBurger } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
 import DarkModeButton from './DarkModeButton';
@@ -171,7 +169,6 @@ const TopBar = ({ toggleSidebar, toggleLargeScreenSidebar, isLargeScreenOpen }) 
               </>
             )}
           </button>
-
           {isCardVisible && (
             <div className="fixed right-0 mt-5 bg-white text-black w-64 h-full shadow-lg p-4 transition-transform transform translate-x-0">
               <button onClick={handleCardToggle} className="absolute top-2 right-2">

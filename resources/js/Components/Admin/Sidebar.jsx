@@ -100,7 +100,7 @@ function Sidebar({ isOpen, isLargeScreenOpen, toggleSidebar }) {
   </div>
 
   {/* Dropdown 2 - Users */}
-  {/* <div
+  <div
     className="relative"
     onMouseEnter={handleDropdownHover2}
     onMouseLeave={handleDropdownLeave2}
@@ -118,9 +118,9 @@ function Sidebar({ isOpen, isLargeScreenOpen, toggleSidebar }) {
           {isDropdownOpen2 ? <MdExpandLess className="h-5 w-5" /> : <MdExpandMore className="h-5 w-5" />}
         </span>
       )}
-    </div> */}
+    </div>
     {/* Dropdown menu outside of sidebar */}
-    {/* {isDropdownOpen2 && (
+    {isDropdownOpen2 && (
       <div className="absolute left-full top-0 bg-white text-blue-600 w-48 shadow-lg rounded-md mt-2">
         <NavLink to="/users/list" className="block p-2 rounded-md hover:bg-blue-800 hover:text-white" onClick={handleSidebarClose}>
           User List
@@ -130,10 +130,10 @@ function Sidebar({ isOpen, isLargeScreenOpen, toggleSidebar }) {
         </NavLink>
       </div>
     )}
-  </div> */}
+  </div>
 
   {/* Dropdown 3 - Courses */}
-  {/* <div
+  <div
     className="relative"
     onMouseEnter={handleDropdownHover3}
     onMouseLeave={handleDropdownLeave3}
@@ -151,9 +151,9 @@ function Sidebar({ isOpen, isLargeScreenOpen, toggleSidebar }) {
           {isDropdownOpen3 ? <MdExpandLess className="h-5 w-5" /> : <MdExpandMore className="h-5 w-5" />}
         </span>
       )}
-    </div> */}
+    </div>
     {/* Dropdown menu outside of sidebar */}
-    {/* {isDropdownOpen3 && (
+    {isDropdownOpen3 && (
       <div className="absolute left-full top-0 bg-white text-blue-600 w-48 shadow-lg rounded-md mt-2">
         <NavLink to="/courses/list" className="block p-2 rounded-md hover:bg-blue-800 hover:text-white" onClick={handleSidebarClose}>
           Course List
@@ -163,10 +163,10 @@ function Sidebar({ isOpen, isLargeScreenOpen, toggleSidebar }) {
         </NavLink>
       </div>
     )}
-  </div> */}
+  </div>
 
   {/* Dropdown 4 - Products */}
-  {/* <div
+  <div
     className="relative"
     onMouseEnter={handleDropdownHover4}
     onMouseLeave={handleDropdownLeave4}
@@ -184,9 +184,9 @@ function Sidebar({ isOpen, isLargeScreenOpen, toggleSidebar }) {
           {isDropdownOpen4 ? <MdExpandLess className="h-5 w-5" /> : <MdExpandMore className="h-5 w-5" />}
         </span>
       )}
-    </div> */}
+    </div>
     {/* Dropdown menu outside of sidebar */}
-    {/* {isDropdownOpen4 && (
+    {isDropdownOpen4 && (
       <div className="absolute left-full top-0 bg-white text-blue-600 w-48 shadow-lg rounded-md mt-2">
         <NavLink to="/products/list" className="block p-2 rounded-md hover:bg-blue-800 hover:text-white" onClick={handleSidebarClose}>
           Product List
@@ -196,10 +196,10 @@ function Sidebar({ isOpen, isLargeScreenOpen, toggleSidebar }) {
         </NavLink>
       </div>
     )}
-  </div> */}
+  </div>
 
   {/* Dropdown 5 - More Options */}
-  {/* <div
+   <div
     className="relative"
     onMouseEnter={handleDropdownHover5}
     onMouseLeave={handleDropdownLeave5}
@@ -219,7 +219,7 @@ function Sidebar({ isOpen, isLargeScreenOpen, toggleSidebar }) {
       )}
     </div>
     {/* Dropdown menu outside of sidebar */}
-    {/* {isDropdownOpen5 && (
+     {isDropdownOpen5 && (
       <div className="absolute left-full top-0 bg-white text-blue-600 w-48 shadow-lg rounded-md mt-2">
         <NavLink to="/more/reports" className="block p-2 rounded-md hover:bg-blue-800 hover:text-white" onClick={handleSidebarClose}>
           Reports
@@ -229,10 +229,8 @@ function Sidebar({ isOpen, isLargeScreenOpen, toggleSidebar }) {
         </NavLink>
       </div>
     )}
-  </div> */}
-
-</nav>
-
+  </div>
+     </nav>
       </div>
     </div>
   );

@@ -11,8 +11,8 @@ export default function Authenticated({ header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
 
     return (
-        <div className="min-h-screen bg-gray-800">
+        <>
             <main>{children}</main>
-        </div>
+        </>
     );
 }
