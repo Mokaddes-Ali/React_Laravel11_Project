@@ -1,3 +1,5 @@
+
+import AppRoute from '@/Routes/AppRoute';
 import { Link, Head } from '@inertiajs/react';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
@@ -11,7 +13,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
     return (
         <>
             <Head title="Welcome" />
-            <div className="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
+            <div className=" text-black/50 bg-gray-400 dark:text-white/50">
                 <img
                     id="background"
                     className="absolute -left-20 top-0 max-w-[877px]"
@@ -55,6 +57,8 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         >
                                             Register
                                         </Link>
+                                        <AppRoute />
+
                                     </>
                                 )}
                             </nav>
@@ -196,7 +200,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         </h2>
 
                                         <p className="mt-4 text-sm/relaxed">
-                                           
+
                                         </p>
                                     </div>
 
