@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 Route::get('/settings/profile', function () {
-    return Inertia::render('Admin/App');
+    return Inertia::render('Admin/Profile');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/settings/account', function () {
@@ -26,7 +26,6 @@ Route::get('/settings/account', function () {
 
 
 
-Route::resource('students', StudentController::class);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

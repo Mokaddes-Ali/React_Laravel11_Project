@@ -239,5 +239,3 @@ function Sidebar({ isOpen, isLargeScreenOpen, toggleSidebar }) {
 export default Sidebar;
 
 
-
-

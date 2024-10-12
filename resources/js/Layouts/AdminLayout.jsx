@@ -1,6 +1,7 @@
 import Sidebar from '@/Components/Admin/Sidebar'
 import Topbar from '@/Components/Admin/Topbar'
 import React, { useState } from 'react'
+import { BrowserRouter } from 'react-router-dom';
 
 const AdminLayout = ({ children }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -15,6 +16,7 @@ const AdminLayout = ({ children }) => {
     };
 
     return (
+        <BrowserRouter>
       <div className="flex h-screen bg-slate-300 dark:bg-gray-800 dark:text-white">
         <Sidebar isOpen={isSidebarOpen} isLargeScreenOpen={isLargeScreenSidebarOpen} toggleSidebar={toggleSidebar} />
         <div className="flex flex-col flex-1">
@@ -24,6 +26,7 @@ const AdminLayout = ({ children }) => {
           </main>
         </div>
       </div>
+      </BrowserRouter>
     );
 }
 
