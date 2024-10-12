@@ -15,9 +15,14 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+
+Route::get('/settings/profile', function () {
+    return Inertia::render('Admin/App');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/settings/account', function () {
+    return Inertia::render('Admin/Account');
+})->middleware(['auth', 'verified']);
 
 
 

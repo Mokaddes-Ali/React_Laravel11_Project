@@ -1,9 +1,19 @@
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+
 import React from 'react'
 
-const Profile = () => {
+const Profile= () => {
   return (
-    <div>Profile</div>
+    <>
+
+            <>
+           <h1>Profile</h1>
+            </>
+
+    </>
   )
 }
+
+
 
 export default Profile

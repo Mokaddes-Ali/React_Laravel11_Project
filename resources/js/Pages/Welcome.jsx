@@ -1,5 +1,5 @@
 
-import AppRoute from '@/Routes/AppRoute';
+import AppRoute from '@/Layouts/Routes/AppRoute';
 import { Link, Head } from '@inertiajs/react';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {

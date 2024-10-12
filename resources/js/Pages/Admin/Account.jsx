@@ -1,8 +1,16 @@
+import AdminLayout from '@/Layouts/AdminLayout';
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import React from 'react'
 
 const Account = () => {
   return (
-    <div>Account</div>
+
+            <>
+            <AdminLayout>
+              <h1>Account</h1>
+              </AdminLayout>
+            </>
+
   )
 }
 
